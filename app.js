@@ -24,6 +24,10 @@ app.use(bodyParser.json())
 app.use(cookieParser());
 app.use(expressValidator());
 app.use(cors());
+//hello world 
+app.get('/api',(req,res)=>{
+    res.send("hello world")
+})
 //routes middleware
 app.use('/api',authRoutes);
 app.use('/api',userRoutes);
