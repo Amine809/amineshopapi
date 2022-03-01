@@ -24,6 +24,10 @@ app.use(bodyParser.json())
 app.use(cookieParser());
 app.use(expressValidator());
 app.use(cors());
+//first route
+app.get('/',(req,res)=>{
+    res.send("this my first heroku app")
+})
 //hello world 
 app.get('/api',(req,res)=>{
     res.send("hello world")
